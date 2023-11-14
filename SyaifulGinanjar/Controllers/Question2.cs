@@ -8,15 +8,10 @@ namespace SyaifulGinanjar.Controllers
     }
 
     public class Question2
-	{
-        public ApplicationInfo GetInfo()
+    {
+        public (string Path, string Name) GetApplicationInfo()
         {
-            return new ApplicationInfo
-            {
-                Path = "C:/apps/",
-                Name = "Shield.exe"
-            };
+            return ("C:/apps/", "Shield.exe");
         }
     }
 }
-
